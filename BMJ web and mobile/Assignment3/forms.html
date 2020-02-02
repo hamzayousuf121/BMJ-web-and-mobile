@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+    <style>
+    .left{
+        position: absolute;
+        left:200px;
+        top:72px;
+    }
+    fieldset{
+        height:170px;
+        width: 500px;
+    }
+    #right{
+        position: absolute;
+        left: 374px;
+        top:72px;
+    }
+    </style>
+</head>
+<body>
+   
+<form method="get"> 
+<fieldset>
+<legend>UserForm</legend>
+<label for="lastname">Lastname*</label>
+<input type="text" id="lastname" name="lastname" required maxlength="25"/>
+<label for="email">Email*</label>
+<input type="email" id="email" name="email" required/><br /><br />
+<label for="status" >Marital Status*</label><br>
+<select>
+    <option>Married</option>
+    <option>Divorced</option>
+    <option>Widowed</option>
+    <option>Single/Never married</option>
+</select><br>
+<div class="left">
+<label for="radio">Number of Children*</label><br>
+<input type="radio" name="child" value="none"/>none<br>
+<input type="radio" name="child" value=""/>1-2<br>
+<input type="radio" name="child" value="More than 2"/>More than 2<br />
+</div>
+<div id="right">
+<label for="checkbox">Gender of Children*</label><br>
+<input type="checkbox" name="gender" />girls<br>
+<input type="checkbox" name="gender" />boys
+</div>
+</fieldset><br>
+
+<input type="submit" value="Continue>>"/>
+</form>
+</body>
+</html>
