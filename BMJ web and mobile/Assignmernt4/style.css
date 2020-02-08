@@ -1,0 +1,58 @@
+@font-face{
+    font-family: 'myfirstfont';
+    src:url("./fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+
+@font-face{
+    font-family: 'mysecoundfont';
+    src:url("./fonts/Gloria_Hallelujah/GloriaHallelujah-Regular.ttf");
+}
+@font-face{
+    font-family: 'mythirdfont';
+    src:url("./fonts/Lemonada/Lemonada-VariableFont_wght.ttf");
+}
+@font-face{
+    font-family: 'myfourthfont';
+    src:url("./fonts/Luckiest_Guy/LuckiestGuy-Regular.ttf");
+}
+@font-face{
+    font-family: 'myfifthfont';
+    src:url("./fonts/Roboto/Roboto-Italic.ttf");
+}
+@font-face{
+    font-family: 'mysixfont';
+    src:url("./fonts/Sriracha/Sriracha-Regular.ttf");
+}
+#html{
+    font-family: 'myfirstfont';
+    color: green;
+    text-decoration: underline;
+}
+#htmlpara{
+    font-family: 'mysecoundfont';
+    color:royalblue
+}
+.javascript{
+    font-family: 'myfifthfont';
+    color: tomato;
+    text-decoration: underline;
+
+}
+.javascriptpara{
+    font-family: 'mysixfont';
+    color:violet;
+    text-decoration: underline;
+
+}
+#react{
+    font-family: 'myfifthfont';
+    color: rgb(30, 149, 165);
+    text-decoration: underline;
+
+}
+.reactpara{
+    font-family: 'mysixfont';
+    color: purple;
+    text-decoration: underline;
+
+}

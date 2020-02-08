@@ -1,0 +1,46 @@
+/* Universal Selector */
+*{
+    color:black;
+    font-family: monospace;
+}
+/* Type Selectors */
+h1, h2, h3{
+    color:red;
+    background: radial-gradient(50% 50%, circle cover, #4FCFFE 0, #4FF65A 100%);
+}
+/* class selector */
+.container{
+    text-align: center;
+    text-decoration: overline;
+}
+/* ID Selectors */
+#wrapper{
+    color: blueviolet;
+    font-style: italic;
+    background-color:yellow;
+}
+/* Child Selector */
+li>a {
+    font-weight: bold;
+    font-size: large;
+    color: yellowgreen;
+    text-transform: none;
+}
+/* Descendant Selector */
+ul li{
+    list-style: none;
+    color:brown;
+    font-size:40px;
+    text-shadow: 4px 4px 2px green;
+}
+/* Adjacent Sibling
+Selector */
+ul+li{
+    color: crimson;
+    background-color: cyan;
+}
+/* General Siblings Selectors */
+ul~li{
+font-style: italic;
+font-weight: bolder;
+}
