@@ -1,0 +1,16 @@
+.box1{
+    width: 400px;height: 300px;border: 5px solid green; padding: 5px; margin: 5px;
+}
+.box2{
+    width: 400px;height: 300px;border: 5px dotted red; padding: 10px; margin: 0 auto;
+}
+.box3{
+    width: 400px;height: 300px;border: 5px dashed purple;padding: 10px; margin: 5px;
+    float: right;
+}
+.img1, .img2, .img3{
+    width: 100px;
+    height: 80px;
+    border: 2px solid gray;
+    margin: 5px;
+}
