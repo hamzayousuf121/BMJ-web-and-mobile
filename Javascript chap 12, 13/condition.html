@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chap 12 And 13 Assignments</h1>
+
+    <!-- Write a program that takes a character (number or string)
+in a variable & checks whether the given input is a
+number, uppercase letter or lower case letter. (Hint: ASCII
+codes:- A=65, Z=90, a=97, z=122).
+
+ -->
+
+ <script>
+
+     var userNumber = parseInt(prompt("Select one Number in given Number 65, 90, 97, 122"))
+     if(userNumber === 65){
+         document.write("You select Capital Letter  'A' Alphabet")
+     }
+     else if(userNumber === 90){
+         document.write("You select Capital letter 'Z' Alphabet")
+     }
+     else if(userNumber === 97){
+         document.write("You select small Letter 'a' Alphabet")
+     }else if(userNumber === 122){
+         document.write("You select small letter 'z' Alphabets")
+     }
+     else{
+        document.write("please select in given number")
+
+     }
+
+//      Write a JavaScript program that accept two integers and
+// display the larger. Also show if the two integers are equal.
+
+if(25 > 21){
+    document.write("larger number is 25 <br>");
+}
+if('abc' === 'abc'){
+    document.write("both string are Same<br>");
+}
+else{
+    document.write("both string are different<br>")
+}
+
+
+// Write a program that takes input a number from user &
+// state whether the number is positive, negative or zero.
+
+var userInput = parseInt(prompt("Enter the positive, negative or zero number<br>"))
+if(userInput == 5){
+    document.write("You Select Positive Number<br>")
+}
+
+else if(userInput == -5){
+    document.write("You Select Negative Number<br>")
+}
+if(userInput === 0){
+    document.write("You Select Zero Number<br>")
+}
+
+// Write a program that takes a character (i.e. string of
+// length 1) and returns true if it is a vowel, false otherwise
+
+var vowelWord = prompt("Enter Your desire Letter")
+vowelWord = vowelWord.toLowerCase();
+if(vowelWord === 'a' || vowelWord === 'e' || vowelWord === 'i' || vowelWord === 'o' || vowelWord === 'u'){
+    alert("You selected Vowel Word")
+}
+else{
+    alert("Your selected Word is not Vowel Word")
+
+}
+
+// Write a program that
+// a. Store correct password in a JS variable.
+// b. Asks user to enter his/her password
+// c. Validate the two passwords:
+// i. Check if user has entered password. If not, then
+// give message “ Please enter your password”
+// ii. Check if both passwords are same. If they are
+// same, show message “Correct! The password you
+// entered matches the original password”. Show
+// “Incorrect password” otherwise.
+
+var password = "Javascript";
+var userPassword = prompt("Enter Your Password");
+if(userPassword == null || userPassword == '' ){
+    alert("please Enter Your Password")
+}
+else if(userPassword === password ){
+alert("Correct! The password you entered matches the original password")
+}
+else{
+    alert("Your typed wrong Password")
+}
+
+// 6. This if/else statement does not work. Try to fix it:
+// var greeting;
+// var hour = 13;
+// if (hour < 18) {
+// greeting = "Good day";
+// else
+// greeting = "Good evening";
+// }
+
+var greeting;
+var hour = 13;
+if (hour < 18) {
+greeting = "Good day";
+}
+else{
+    greeting = "Good evening";
+}
+
+// Write a program that takes time as input from user in 24
+// hours clock format like: 1900 = 7pm. Implement the
+// following case using if, else & else if statements
+    var times = 1900;
+    if(times >= 0000 && times < 1200){
+        document.write("<br /> Good Morning")
+    }
+
+    else if(times >= 1200 && times < 1700){
+        document.write("<br /> Good AfterNoon")
+    }
+
+    else if(times >= 1700 && times < 2100){
+        document.write("<br /> Good Evening")
+    }
+
+    else if(times >= 2100 && times < 2359){
+        document.write("<br /> Good Night")
+    }
+ 
+ </script>
+</body>
+</html>

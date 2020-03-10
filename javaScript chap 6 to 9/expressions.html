@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mathematics Expression</h1>
+    <script>
+// 1. Write a program to take a number in a variable, do the
+// required arithmetic to display the following result in your
+// browser:
+
+var a = 10;
+document.write("The Value of a is " + a + "<br")
+document.write("The Value of ++a is: " + ++a + "<br")
+document.write("Now That The Value of a is " + a + "<br")
+document.write("The Value of a++ is " + a++ + "<br")
+document.write("Now That The Value of a is " + a + "<br")
+document.write("The Value of --a is " + --a + "<br")
+document.write("Now That The Value of a is " + a + "<br")
+document.write("The Value of a-- is " + a-- + "<br")
+document.write("Now That The Value of a is " + a + "<br")
+
+
+
+// What will be the output in variables a, b & result after
+// execution of the following script:
+var a = 2, b = 1;
+var result = --a - --b + ++b + b--;
+// Explain the output at each stage:
+// --a;  // predecremnt in a
+// --a - --b; // predecremnt in a and minus predecremnt in b
+// --a - --b + ++b;  // predecremnt in a and minus post increment in B
+// --a - --b + ++b + b--; // predecremnt in a and minus predecremnt in b and plus preIncrement in B and plus postDecremt in B
+
+document.write("a is " + a)
+document.write("b is " + b)
+document.write("result  is " + result)
+
+
+// Write a program that takes input a name from user &
+// greet the user.
+
+var greet = prompt("Enter Your name")
+alert("Wellcome dear " + greet)
+
+
+// Write a program to take input a number from user &
+// display it’s multiplication table on your browser. If user
+// does not enter a new number, multiplication table of 5
+// should be displayed by default.
+
+var userTable = parseInt(prompt("Enter Your Favorite Number i will print the table", 5 ))
+if(userTable == null || userTable == ''){
+    var table = 5 ;
+    var num = 0;
+    document.write(`${table} X ${++num} = ${table * num}`)
+    document.write(`${table} X ${++num} = ${table * num}`)
+    document.write(`${table} X ${++num} = ${table * num}`)
+    document.write(`${table} X ${++num} = ${table * num}`)
+    document.write(`${table} X ${++num} = ${table * num}`)
+    document.write(`${table} X ${++num} = ${table * num}`)
+    document.write(`${table} X ${++num} = ${table * num}`)
+    document.write(`${table} X ${++num} = ${table * num}`)
+    document.write(`${table} X ${++num} = ${table * num}`)
+    document.write(`${table} X ${++num} = ${table * num}`)
+}
+else{
+    document.write(`${userTable} X ${++num} = ${userTable * num}`)
+    document.write(`${userTable} X ${++num} = ${userTable * num}`)
+    document.write(`${userTable} X ${++num} = ${userTable * num}`)
+    document.write(`${userTable} X ${++num} = ${userTable * num}`)
+    document.write(`${userTable} X ${++num} = ${userTable * num}`)
+    document.write(`${userTable} X ${++num} = ${userTable * num}`)
+    document.write(`${userTable} X ${++num} = ${userTable * num}`)
+    document.write(`${userTable} X ${++num} = ${userTable * num}`)
+    document.write(`${userTable} X ${++num} = ${userTable * num}`)
+    document.write(`${userTable} X ${++num} = ${userTable * num}`)
+}
+
+
+// Take
+// a) Take three subjects name from user and store them in 3
+// different variables.
+// b) Total marks for each subject is 100, store it in another
+// variable.
+// c) Take obtained marks for first subject from user and
+// stored it in different variable.
+
+// ALERTS | JAVASCRIPT
+
+// Page 3 of 3
+// d) Take obtained marks for remaining 2 subjects from user
+// and store them in variables.
+// e) Now calculate total marks and percentage and show the
+// result in browser like this.(Hint: user table)
+
+let subject1 = parseInt(prompt("Enter Your Subject one name"))
+let subject2 = parseInt(prompt("Enter Your Subject two name"))
+let subject3 = parseInt(prompt("Enter Your Subject three name"))
+let totalMarks = 100;
+
+let Mathematics = parseInt(prompt("Enter Your Mathematics Marks"))
+let Chemistry = parseInt(prompt("Enter Your Chemistry Marks"))
+let Zoology = parseInt(prompt("Enter Your Zoology Marks"))
+
+
+var subjectone = Mathematics / totalMarks * 100;
+var subjecttwo = Chemistry / totalMarks * 100;
+var subjectthree = Zoology / totalMarks * 100;
+
+document.write(subject1 + "percentage is" + subjectone + '%<br>')
+document.write(subject2 + "percentage is" + subjecttwo + '%<br>')
+document.write(subject3 + "percentage is" + subjectthree + "%<br>")
+
+    </script>
+</body>
+</html>
